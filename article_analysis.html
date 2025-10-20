@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Analysis: Why I Left Libertarianism</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+
+        h3 {
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .meta-info {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        .meta-info p {
+            margin: 8px 0;
+        }
+
+        .meta-info strong {
+            color: #2c3e50;
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .info-box {
+            background-color: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .framing-item {
+            background-color: #f8f9fa;
+            padding: 12px;
+            margin: 10px 0;
+            border-left: 3px solid #6c757d;
+        }
+
+        .framing-item strong {
+            color: #495057;
+        }
+
+        .assessment {
+            background-color: #e7f3ff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #555;
+            padding: 10px 20px;
+            border-left: 3px solid #95a5a6;
+            margin: 15px 0;
+            background-color: #f9f9f9;
+        }
+
+        .stat-box {
+            background-color: #e8f5e9;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 3px;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }
+
+        /* Reader Mode Styles */
+        .mode-toggle {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+            border: 2px solid #dee2e6;
+        }
+
+        .mode-toggle h2 {
+            margin: 0 0 15px 0;
+            border: none;
+            padding: 0;
+            font-size: 1.3em;
+        }
+
+        .toggle-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .toggle-btn {
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            border: 2px solid #3498db;
+            background-color: white;
+            color: #3498db;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-btn:hover {
+            background-color: #e8f4f8;
+        }
+
+        .toggle-btn.active {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .reader-mode {
+            display: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .reader-mode.active {
+            display: block;
+        }
+
+        .reader-mode h2 {
+            color: white;
+            border-left: 4px solid white;
+            margin-top: 0;
+        }
+
+        .reader-mode h3 {
+            color: #f0f0f0;
+            margin-top: 25px;
+            font-size: 1.1em;
+        }
+
+        .reader-mode p {
+            line-height: 1.8;
+            font-size: 1.05em;
+            margin: 12px 0;
+        }
+
+        .reader-mode ul {
+            margin: 15px 0;
+        }
+
+        .reader-mode li {
+            margin: 8px 0;
+            line-height: 1.7;
+        }
+
+        .reader-highlight {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #ffd700;
+        }
+
+        .analysis-mode {
+            display: none;
+        }
+
+        .analysis-mode.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Robert Snow's Article Analysis Framework</h1>
+
+        <!-- Mode Toggle -->
+        <div class="mode-toggle">
+            <h2>📖 Select Reading Mode</h2>
+            <div class="toggle-buttons">
+                <button class="toggle-btn active" onclick="showReaderMode()">📄 Reader Mode (Quick Summary)</button>
+                <button class="toggle-btn" onclick="showAnalysisMode()">🔬 Analysis Mode (Full Breakdown)</button>
+            </div>
+        </div>
+
+        <!-- Reader Mode Section -->
+        <div class="reader-mode active" id="readerMode">
+            <h2>📄 Reader Mode: Plain-Language Summary</h2>
+            
+            <div class="reader-highlight">
+                <p><strong>⚡ Quick Take:</strong> This is a 2014 personal essay by Will Moyer explaining why he stopped calling himself a libertarian after 10 years. He's not attacking libertarianism from the outside—he's critiquing it as someone who studied it deeply and found it too narrow for his goals.</p>
+            </div>
+
+            <h3>What This Article Actually Is:</h3>
+            <p><strong>Type:</strong> Opinion essay / philosophical reflection<br>
+            <strong>Source:</strong> Salon.com (left-leaning opinion site), June 2014<br>
+            <strong>Author:</strong> Will Moyer (blogger, former libertarian)</p>
+
+            <h3>The Author's Journey (Factual Timeline):</h3>
+            <ul>
+                <li>Discovered libertarianism in 2000 watching third-party debates</li>
+                <li>Registered as Libertarian at age 18</li>
+                <li>Read libertarian philosophers: Ayn Rand, Rothbard, Mises</li>
+                <li>Evolved from mainstream libertarian → anarcho-capitalist → left-anarchist/libertarian-socialist</li>
+                <li>Now sees traditional libertarianism as incomplete</li>
+            </ul>
+
+            <h3>His Main Arguments (Simplified):</h3>
+            
+            <p><strong>1. Libertarianism has a narrow focus:</strong></p>
+            <ul>
+                <li>It only addresses violence, force, and property rights</li>
+                <li>It intentionally says nothing about race, gender, culture, religion, or social issues</li>
+                <li>This is by design—libertarians call it a "political ethic" not a complete life philosophy</li>
+            </ul>
+
+            <p><strong>2. This creates awkward situations:</strong></p>
+            <ul>
+                <li>Some libertarian thinkers have extreme views (like parents should be able to starve children as long as they don't actively murder them)</li>
+                <li>The philosophy can't address exploitative relationships if they're "voluntary"</li>
+                <li>It treats all choices as equally free if no direct force is involved</li>
+            </ul>
+
+            <p><strong>3. He wants more:</strong></p>
+            <ul>
+                <li>Getting rid of the government isn't enough for him anymore</li>
+                <li>He wants to address all forms of hierarchy and social problems</li>
+                <li>He thinks libertarians should expand their concerns beyond just state power</li>
+            </ul>
+
+            <h3>What's Actually Proven vs. What's Opinion:</h3>
+            
+            <div class="reader-highlight">
+                <p><strong>✅ Facts we can verify:</strong></p>
+                <ul>
+                    <li>Libertarian philosophy does intentionally limit itself to questions about force and property</li>
+                    <li>Some libertarian theorists (Rothbard, Block) did write controversial things about children's rights</li>
+                    <li>There is real debate within libertarian circles about whether to expand beyond narrow political focus</li>
+                    <li>The author did spend 10 years in libertarian circles</li>
+                </ul>
+
+                <p><strong>❓ What's his personal opinion:</strong></p>
+                <ul>
+                    <li>That this narrow focus is a fatal flaw rather than a strategic choice</li>
+                    <li>That libertarianism can't address important social issues</li>
+                    <li>That all hierarchies (not just government) need to be dismantled</li>
+                    <li>That you need a comprehensive life philosophy, not just political theory</li>
+                </ul>
+            </div>
+
+            <h3>What's Missing from His Argument:</h3>
+            <ul>
+                <li>He mostly quotes extreme anarcho-capitalist thinkers, not moderate libertarians</li>
+                <li>Doesn't mention libertarians who DO work on social justice, racial issues, etc.</li>
+                <li>Doesn't engage with the argument that narrow focus is actually a strength</li>
+                <li>No evidence that other political philosophies are more "complete"</li>
+                <li>Uses extreme examples (child starvation) that most libertarians reject</li>
+            </ul>
+
+            <h3>Bottom Line for Readers:</h3>
+            <p><strong>What you can conclude:</strong> This is one smart person's honest explanation for why he personally moved away from libertarianism. He's right that libertarianism intentionally focuses narrowly on government force. Whether that's good or bad depends on what you want from a political philosophy.</p>
+
+            <p><strong>What you can't conclude:</strong> That libertarianism is objectively "wrong" or "limited." The author is judging it against goals it never claimed to have. It's like criticizing a hammer for not being a screwdriver.</p>
+
+            <p><strong>Who should read this:</strong> Anyone curious about libertarianism's internal debates, or people wondering why some former libertarians move left. Just remember this is one perspective, not a neutral analysis.</p>
+
+            <div class="reader-highlight">
+                <p><strong>🎯 The Real Point:</strong> The author evolved from "government is the only problem" to "government is one problem among many." He's inviting libertarians to come with him. Whether you should depends on whether you agree that a political philosophy must address everything about human society.</p>
+            </div>
+        </div>
+
+        <!-- Analysis Mode Section -->
+        <div class="analysis-mode" id="analysisMode">
+        
+        <!-- Section 1: Headline & Source Info -->
+        <div class="section">
+            <h2>1. Headline & Source Info</h2>
+            <div class="meta-info">
+                <p><strong>Title:</strong> "Why I left libertarianism: An ethical critique of a limited ideology"</p>
+                <p><strong>Subtitle:</strong> "I value many contributions libertarianism makes to challenging power. But here's why I no longer associate with it"</p>
+                <p><strong>Author:</strong> Will Moyer</p>
+                <p><strong>Publication:</strong> Salon.com</p>
+                <p><strong>Date:</strong> June 14, 2014</p>
+                <p><strong>Time:</strong> 12:30 PM EDT</p>
+                <p><strong>Section:</strong> News & Politics</p>
+            </div>
+            
+            <div class="warning-box">
+                <h3>Headline Framing Analysis</h3>
+                <p><strong>Emotional Framing:</strong> The headline uses personal narrative ("Why I left") which creates an intimate, confessional tone. The word "limited" carries subtle negative judgment.</p>
+                <p><strong>Tone:</strong> Moderately critical but not overtly hostile. The subtitle attempts to soften criticism by acknowledging value ("I value many contributions").</p>
+                <p><strong>Loaded Wording:</strong> "Limited ideology" frames libertarianism as incomplete or insufficient rather than simply different.</p>
+            </div>
+        </div>
+
+        <!-- Section 2: Summary of Verified Facts -->
+        <div class="section">
+            <h2>2. Summary of Verified Facts</h2>
+            <ul>
+                <li><strong>Author's Background:</strong> Will Moyer identified as a libertarian for approximately 10 years (2000-2010s)</li>
+                <li><strong>Political Activity:</strong> First exposure to libertarianism was watching Harry Browne in third-party presidential debates in 2000</li>
+                <li><strong>Registration:</strong> Author registered to vote with the Libertarian Party at age 18</li>
+                <li><strong>Philosophical Reading:</strong> Author read works by Ayn Rand, Murray Rothbard, and Ludwig von Mises</li>
+                <li><strong>Direct Quotes Cited:</strong>
+                    <ul>
+                        <li>Murray Rothbard quote on political ethics and property rights (source not specified beyond Rothbard's writings)</li>
+                        <li>Rothbard quote on parental obligations regarding children (source not specified)</li>
+                        <li>Lew Rockwell quote on libertarianism's scope (source not specified)</li>
+                        <li>Christopher Cantwell quote dismissing expanded libertarianism (source not specified)</li>
+                        <li>Quote from "Tarzie" on anti-libertarian rhetoric (source not specified)</li>
+                        <li>Jezebel quote on spanking legislation (specific article not cited)</li>
+                    </ul>
+                </li>
+                <li><strong>Ideological Evolution:</strong> Author moved from capital-L Libertarian Party politics toward anarcho-capitalism, then toward "radical, leftist anarchism" or "libertarian-socialism"</li>
+                <li><strong>Reference to Jeffrey Tucker:</strong> Tucker described certain libertarians as "brutalists" (specific source not provided)</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>Note:</strong> The article is primarily a first-person philosophical essay rather than investigative journalism. Most "facts" are personal anecdotes or quotations from libertarian theorists. The quotes appear to be accurately attributed but lack specific citations (book titles, page numbers, publication dates).</p>
+            </div>
+        </div>
+
+        <!-- Section 3: Counterpoints or Missing Context -->
+        <div class="section">
+            <h2>3. Counterpoints or Missing Context</h2>
+            
+            <h3>Missing Libertarian Perspectives:</h3>
+            <ul>
+                <li><strong>Diversity of Libertarian Thought:</strong> The article acknowledges "no true Scotsman" issues but primarily critiques anarcho-capitalist theorists (Rothbard, Block, Rockwell) without addressing other libertarian schools (classical liberals, bleeding-heart libertarians, left-libertarians who already address many of his concerns)</li>
+                <li><strong>Child Welfare Positions:</strong> The extreme positions on child abandonment (Rothbard, Block) are presented without noting that these are controversial even within libertarian circles and not representative of mainstream libertarian thought</li>
+                <li><strong>Libertarian Social Justice Work:</strong> No mention of libertarians actively working on racial justice, criminal justice reform, immigration rights, LGBTQ+ rights, or other social issues the author claims libertarianism ignores</li>
+                <li><strong>Thick Libertarianism:</strong> Limited acknowledgment of "thick libertarians" who explicitly combine libertarian political philosophy with broader social values</li>
+                <li><strong>Historical Context:</strong> No discussion of libertarian contributions to civil rights, anti-war movements, or other progressive causes</li>
+            </ul>
+
+            <h3>Potential Counter-Arguments:</h3>
+            <ul>
+                <li><strong>Division of Labor:</strong> Libertarians might argue that specialized focus on state violence is strategic, not limiting—other movements can address cultural issues</li>
+                <li><strong>Consent Framework:</strong> The binary consent model could be defended as necessarily simple for legal/political frameworks while acknowledging personal morality addresses nuance</li>
+                <li><strong>False Dichotomy:</strong> One could argue the author creates a false choice between focusing on state power versus addressing other hierarchies—many do both</li>
+                <li><strong>Post-State Assumptions:</strong> Libertarians might contend that many social problems (racism, poverty, hierarchies) are perpetuated or created by the state, so dismantling it would naturally address these issues</li>
+            </ul>
+
+            <div class="warning-box">
+                <h3>Underrepresented Viewpoints:</h3>
+                <p>The article focuses heavily on paleo-libertarian and anarcho-capitalist thinkers while underrepresenting or omitting liberal-leaning libertarians, mutualists, agorists, and left-libertarians who have developed robust positions on race, gender, class, and social hierarchy.</p>
+            </div>
+        </div>
+
+        <!-- Section 4: Logical and Framing Analysis -->
+        <div class="section">
+            <h2>4. Logical and Framing Analysis</h2>
+
+            <div class="framing-item">
+                <strong>Rhetorical Tactic: Personal Journey Narrative</strong>
+                <p><strong>How it works:</strong> The author establishes credibility through insider status ("I considered myself a libertarian for at least 10 years") and frames the critique as authentic self-reflection rather than external attack.</p>
+                <p><strong>Effect on reader:</strong> Creates trust and authenticity; positions criticism as coming from someone who genuinely understood and embraced the philosophy. Makes critique harder to dismiss as uninformed.</p>
+            </div>
+
+            <div class="framing-item">
+                <strong>Rhetorical Tactic: Selective Exemplification</strong>
+                <p><strong>How it works:</strong> Uses most extreme/controversial libertarian positions (child starvation, child abuse continuum) as primary examples of libertarian ethics.</p>
+                <p><strong>Effect on reader:</strong> Creates visceral emotional response and may lead readers to associate libertarianism generally with these extreme positions, even though author acknowledges these don't represent all libertarians.</p>
+            </div>
+
+            <div class="framing-item">
+                <strong>Rhetorical Tactic: Strategic Concession</strong>
+                <p><strong>How it works:</strong> Repeatedly acknowledges libertarian strengths ("I value many contributions," "deserve the least criticism," "would make the world a much better place") before presenting critiques.</p>
+                <p><strong>Effect on reader:</strong> Appears balanced and fair-minded, making subsequent criticisms more persuasive. Reduces perception of ideological bias.</p>
+            </div>
+
+            <div class="framing-item">
+                <strong>Rhetorical Tactic: Redefinition of Goals</strong>
+                <p><strong>How it works:</strong> Shifts from libertarian goal (eliminating state coercion) to broader goal (human flourishing, eliminating all hierarchies including non-violent ones).</p>
+                <p><strong>Effect on reader:</strong> Makes libertarianism appear limited not on its own terms, but against a broader standard the reader may find more appealing. Libertarianism is judged insufficient because it doesn't pursue goals it never claimed to pursue.</p>
+            </div>
+
+            <div class="framing-item">
+                <strong>Rhetorical Tactic: Binary Contrast</strong>
+                <p><strong>How it works:</strong> Ironically criticizes libertarianism for binary thinking (consent/coercion) while creating binary choice: either expand libertarianism to address all social issues or remain "limited."</p>
+                <p><strong>Effect on reader:</strong> Positions the author's evolved position as obviously superior; makes continuing to identify as libertarian appear morally inadequate.</p>
+            </div>
+
+            <div class="framing-item">
+                <strong>Emotional Appeal: Moral Urgency</strong>
+                <p><strong>How it works:</strong> Invokes children, animals, vulnerable workers, and oppressed groups throughout. Uses words like "grotesque," "embarrassing," and "inadequate."</p>
+                <p><strong>Effect on reader:</strong> Creates sense that libertarianism is not just philosophically incomplete but morally insufficient, even callous.</p>
+            </div>
+
+            <div class="framing-item">
+                <strong>Framing Tactic: Comparison to Progressive Sources</strong>
+                <p><strong>How it works:</strong> Favorably compares Jezebel's clarity on child abuse to libertarian "continuum problem."</p>
+                <p><strong>Effect on reader:</strong> Positions progressive/left perspectives as having moral clarity libertarianism lacks, despite Jezebel operating from entirely different philosophical framework.</p>
+            </div>
+
+            <div class="framing-item">
+                <strong>Logical Structure: Expansion, Not Rejection</strong>
+                <p><strong>How it works:</strong> Frames critique as invitation to growth ("You don't have to reject your current beliefs. But you must expand them") rather than complete abandonment.</p>
+                <p><strong>Effect on reader:</strong> Makes transition away from libertarianism feel like evolution rather than betrayal; invites libertarian readers to follow similar path.</p>
+            </div>
+
+            <h3>Notable Omissions in Framing:</h3>
+            <ul>
+                <li>No discussion of potential trade-offs or costs of expanding libertarianism's scope</li>
+                <li>Limited engagement with libertarian arguments for why limiting political philosophy to force/property is beneficial</li>
+                <li>No acknowledgment that other political philosophies also have limited scopes or internal debates</li>
+            </ul>
+        </div>
+
+        <!-- Section 5: Statistical and Data Notes -->
+        <div class="section">
+            <h2>5. Statistical and Data Notes</h2>
+            
+            <div class="stat-box">
+                <h3>Quantitative Claims:</h3>
+                <p><strong>No statistical data, numerical evidence, or quantitative research is presented in this article.</strong></p>
+            </div>
+
+            <h3>Vague Quantifiers Used:</h3>
+            <ul>
+                <li>"Many libertarians" - Used multiple times without specification of how many or what proportion</li>
+                <li>"Countless exceptions" - Refers to diversity of libertarian thought without enumeration</li>
+                <li>"Many of the contributions" - Unquantified acknowledgment of libertarian value</li>
+                <li>"Far from the only one" - Regarding state as source of hierarchy</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>Note on Methodology:</strong> This is a philosophical/opinion essay, not an empirical study. The lack of statistical data is appropriate for the genre. However, claims about what "libertarians" generally believe or do are based on the author's personal experience and reading rather than systematic survey or research.</p>
+            </div>
+
+            <h3>Unsupported Quantitative Implications:</h3>
+            <ul>
+                <li><strong>"Most libertarians would admit that this spectrum exists"</strong> - No evidence provided for this claim about majority opinion</li>
+                <li><strong>"Strong sentiment within libertarianism"</strong> - No measurement of how widespread this sentiment is</li>
+                <li><strong>"Socially conservative bloc"</strong> - References a bloc without sizing or characterizing it</li>
+            </ul>
+        </div>
+
+        <!-- Section 6: Logical Integrity Check -->
+        <div class="section">
+            <h2>6. Logical Integrity Check</h2>
+
+            <h3>Unsupported Assumptions:</h3>
+            <ul>
+                <li><strong>Assumption:</strong> That a political philosophy must address all aspects of human social life to be valid or complete
+                    <ul>
+                        <li><strong>Issue:</strong> Author doesn't establish why this is necessary. Most political philosophies have specific domains—this may be feature, not bug.</li>
+                    </ul>
+                </li>
+                <li><strong>Assumption:</strong> That libertarian focus on state power implies neglect of other issues
+                    <ul>
+                        <li><strong>Issue:</strong> False dichotomy—individuals can hold libertarian political views while addressing cultural issues through non-political means.</li>
+                    </ul>
+                </li>
+                <li><strong>Assumption:</strong> That extreme positions (Rothbard on child starvation) represent central or common libertarian thought
+                    <ul>
+                        <li><strong>Issue:</strong> Author acknowledges exceptions but uses extreme examples as primary evidence of libertarian inadequacy.</li>
+                    </ul>
+                </li>
+                <li><strong>Assumption:</strong> That eliminating the state is insufficient for addressing hierarchy and oppression
+                    <ul>
+                        <li><strong>Issue:</strong> No engagement with libertarian arguments that state power enables/creates many other hierarchies.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Logical Fallacies and Weak Arguments:</h3>
+            
+            <div class="framing-item">
+                <strong>Potential Straw Man:</strong>
+                <p>The article suggests libertarianism teaches that all voluntary exchanges are equally "good" or ethically equivalent. However, the distinction between "legally permissible" and "morally good" is central to libertarian thought—a distinction the author himself quotes but then seems to conflate.</p>
+            </div>
+
+            <div class="framing-item">
+                <strong>Moving the Goalposts:</strong>
+                <p>Libertarianism is criticized for not achieving goals it doesn't claim to achieve. The philosophy aims to define when force is justified, not to provide complete guide to human flourishing. Author acknowledges this but then critiques libertarianism for the acknowledged limitation.</p>
+            </div>
+
+            <div class="framing-item">
+                <strong>Cherry-Picking:</strong>
+                <p>Focuses on most extreme anarcho-capitalist thinkers while minimizing or ignoring moderate libertarian voices and libertarian activism on social issues.</p>
+            </div>
+
+            <div class="framing-item">
+                <strong>False Dilemma:</strong>
+                <p>Presents choice as either (a) expand libertarianism to cover all social/cultural issues or (b) remain "limited" and inadequate. Doesn't consider that specialized political philosophy plus separate ethical/cultural frameworks could be valid approach.</p>
+            </div>
+
+            <h3>Missing Evidence:</h3>
+            <ul>
+                <li>No evidence that libertarians who focus on state power ignore or oppose work on other social issues</li>
+                <li>No demonstration that the "limited" scope causes practical harm or prevents positive change</li>
+                <li>No evidence that alternative frameworks (socialism, etc.) are more complete or effective</li>
+                <li>No engagement with libertarian literature that does address race, gender, class (it exists)</li>
+            </ul>
+
+            <h3>Unsupported Causal Claims:</h3>
+            <ul>
+                <li><strong>"Toxic social and cultural norms are much less concrete an enemy than the state, but they must be battled all the same"</strong>
+                    <ul>
+                        <li>Implies these are separate battles requiring separate frameworks, but doesn't prove libertarian approach can't address both</li>
+                    </ul>
+                </li>
+                <li><strong>Implication that limited political ethic leads to inadequate social philosophy</strong>
+                    <ul>
+                        <li>Correlation presented without establishing causation or necessity</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Internally Consistent Arguments:</h3>
+            <ul>
+                <li>IF one accepts that political philosophy should address all aspects of human social life, THEN libertarianism is incomplete (but this premise is assumed, not proven)</li>
+                <li>The observation that libertarian ethics is intentionally limited is accurate and well-supported by quotes</li>
+                <li>The characterization of the consent binary is fair, though whether this is weakness or strength is debatable</li>
+            </ul>
+        </div>
+
+        <!-- Section 7: Overall Assessment -->
+        <div class="section">
+            <h2>7. Overall Assessment (Neutral Framing)</h2>
+            
+            <div class="assessment">
+                <h3>What Can Be Factually Concluded:</h3>
+                <ul>
+                    <li>The author genuinely identified as libertarian for approximately a decade and engaged seriously with libertarian philosophy</li>
+                    <li>Libertarian political philosophy, as articulated by theorists like Rothbard and Rockwell, intentionally limits its scope to questions of force, property, and aggression</li>
+                    <li>This limited scope means libertarianism, as a political philosophy, doesn't directly address many social, cultural, and moral questions</li>
+                    <li>Some prominent libertarian theorists have taken controversial positions on children's rights and parental obligations</li>
+                    <li>There exists tension within libertarian movement between "purists" and those who want to combine libertarianism with broader social concerns</li>
+                    <li>The author has personally moved toward left-anarchism or libertarian-socialism as he found traditional libertarianism insufficient for his goals</li>
+                </ul>
+
+                <h3>What Requires Further Verification:</h3>
+                <ul>
+                    <li><strong>Representativeness:</strong> Whether the theorists quoted (especially their most extreme positions) represent mainstream libertarian thought</li>
+                    <li><strong>Quantitative claims:</strong> Assertions about what "many" or "most" libertarians believe or do</li>
+                    <li><strong>Citation accuracy:</strong> While quotes appear credible, specific sources (books, articles, page numbers) are not provided for verification</li>
+                    <li><strong>Omitted perspectives:</strong> Extent and nature of libertarian work on social issues beyond state power</li>
+                    <li><strong>Comparative analysis:</strong> Whether alternative political philosophies are more "complete" in the ways the author desires</li>
+                    <li><strong>Causal relationships:</strong> Whether limited political scope actually prevents or hinders broader social progress</li>
+                </ul>
+
+                <h3>Uncertainty and Limitations:</h3>
+                <ul>
+                    <li>The article is explicitly an opinion/philosophical essay presenting one person's intellectual journey, not investigative journalism or academic research</li>
+                    <li>The critique is philosophical in nature—reasonable people can disagree about whether political philosophy should be limited or comprehensive</li>
+                    <li>What constitutes an "adequate" or "complete" political philosophy is subjective and depends on one's goals and values</li>
+                    <li>The piece acknowledges its own broad generalizations and exceptions but still relies on them for main arguments</li>
+                    <li>Counter-arguments from libertarians defending their framework's intentional limitations are underrepresented</li>
+                </ul>
+
+                <h3>Reliability Assessment:</h3>
+                <p><strong>Source Credibility:</strong> Author demonstrates genuine familiarity with libertarian philosophy. Salon is opinion-oriented publication with left-leaning audience. Published 2014, still relevant for understanding libertarian debates.</p>
+                
+                <p><strong>Completeness:</strong> Presents one perspective thoroughly but lacks systematic engagement with counter-arguments or diversity of libertarian thought. Cherry-picks some extreme examples while acknowledging they may not be representative.</p>
+                
+                <p><strong>Factual Accuracy:</strong> Quotes and characterizations of libertarian positions appear accurate (though lacking specific citations). Personal anecdotes cannot be verified but appear genuine.</p>
+
+                <p><strong>Logical Soundness:</strong> Internal logic is generally consistent, but rests on debatable premise that political philosophy must be comprehensive. Some arguments present false dilemmas or move goalposts.</p>
+
+                <h3>Reader Takeaway:</h3>
+                <p>This article presents a thoughtful, insider critique of libertarianism's intentionally limited scope from someone who has evolved toward left-anarchism. The core observation—that libertarian political philosophy deliberately restricts itself to questions of force and property—is accurate. Whether this limitation is a weakness (as author argues) or a strategic strength (as libertarians might argue) depends on one's philosophical commitments and goals.</p>
+                
+                <p>Readers should understand this as one person's philosophical journey and critique, not a comprehensive or neutral analysis of libertarian thought. The article is most valuable for understanding internal debates within anti-state movements and for articulating one path away from right-libertarianism toward left-anarchism.</p>
+                
+                <p>Those seeking to evaluate libertarianism should also consult libertarian responses, engage with the diversity of libertarian thought (including left-libertarians and bleeding-heart libertarians who address many concerns raised here), and consider whether specialized political philosophy plus separate ethical frameworks might be preferable to comprehensive ideology.</p>
+            </div>
+        </div>
+        
+        </div>
+        <!-- End Analysis Mode -->
+
+        <footer>
+            <p>Robert Snow's Analysis Framework Application | Generated: <span id="date"></span></p>
+            <p>Neutral, analytical assessment of article content and framing</p>
+        </footer>
+    </div>
+
+    <script>
+        // Set current date
+        document.getElementById('date').textContent = new Date().toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        });
+
+        // Mode toggle functionality
+        function showReaderMode() {
+            document.getElementById('readerMode').classList.add('active');
+            document.getElementById('analysisMode').classList.remove('active');
+            document.querySelectorAll('.toggle-btn')[0].classList.add('active');
+            document.querySelectorAll('.toggle-btn')[1].classList.remove('active');
+        }
+
+        function showAnalysisMode() {
+            document.getElementById('readerMode').classList.remove('active');
+            document.getElementById('analysisMode').classList.add('active');
+            document.querySelectorAll('.toggle-btn')[0].classList.remove('active');
+            document.querySelectorAll('.toggle-btn')[1].classList.add('active');
+        }
+    </script>
+</body>
+</html>
